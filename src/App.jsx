@@ -1,9 +1,11 @@
-import FoodList from './components/FoodList';
+import "./App.css";
+import foods from "./foods.json";
+import FoodList from "./components/FoodList";
 
 function App() {
   return (
-    <div className="App">
-      <FoodList />
+    <div className="foodContainer">
+      <FoodList food={foods}/>
     </div>
   );
 }
